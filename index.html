@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-  <header>
+  <header class="main-head">
   	<div class="container">
   		<nav class="main-navigation">
   			<ul>
@@ -94,22 +94,24 @@
   </div>
   <div class="dates">
   	<h2>Поиск гостиницы в Седоне</h2>
-    <label>Дата заезда:<input type="date"></label><br>
-  	<label>Дата выезда:<input type="date"></label><br>
-  	       Взрослые:<button>-</button><input type="number" value="2" step="1"><button>+</button>
-  	       Дети:<button>-</button><input type="number" value="0" step="1"><button>+</button><br>
-     <input type="submit" value="Найти">
+    <form action="#" method="post">
+      <label for="in">Дата заезда:<input type="date" id="in"></label><br>
+  	  <label for="out">Дата выезда:<input type="date" id="out"></label><br>
+  	  <label for="humans"> Взрослые:<button>-</button><input type="number" value="2" step="1" id="humans"><button>+</button><br></label>
+  	   <label for="child">Дети:<button>-</button><input type="number" value="0" step="1" id="child"><button>+</button><br></label>
+       <input type="submit" value="Найти">
+     </form>
   	</div>
   	</main>
-  	<footer>
-  		<div class="main-foot">
-  			<b>#VisitSedona</b><br>
+  	<footer class="main-foot">
+  		<div class="foot">
+  			<b>#VisitSedona</b>
   			<section class="contacts">
-  			<a class="social-btn social-btn-twitter" href="#"><img src="img/tw" alt="tw"></a>
+  			  <a class="social-btn social-btn-twitter" href="#"><img src="img/tw" alt="tw"></a>
   			  <a class="social-btn social-btn-fb" href="#"><img src="img/fb" alt="fb"></a>
-              <a class="social-btn social-btn-inst" href="#"><img src="img/inst" alt="inst"></a>
+          <a class="social-btn social-btn-inst" href="#"><img src="img/inst" alt="inst"></a>
   		    </section>
-  		    <section class="footer-copyright">
+  		  <section class="footer-copyright">
              Website by
               <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
             </section>
