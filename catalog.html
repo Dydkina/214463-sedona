@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="C:/Users/алиса/Desktop/214463-sedona/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="main-header">
   	<div class="container">
   		<nav class="main-navigation">
   			<ul>
-  			  <li><a href="#">Информация</a></li>
+  			  <li><a href="index.html">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <img src="C:/Users/алиса/Desktop/214463-sedona/img/logo.jpg">
+          <img src="img/logo.jpg">
           <li><a href="#">Карта штата</a><li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="catalog.html" class="active">Гостиницы</a></li>
   			</ul>
   		</nav>
   </header>
   <main>
-     <div class="menu">
+     <div class="menu" >
      	<section class="plus">
-     	  <b>Инфраструктура:</b>
+     	  <h2>Инфраструктура:</h2>
      	  <form action="#" method="post">
      	    <input type="checkbox" id="spool" checked>
      		<label for="spool">Бассейн</label><br>
@@ -32,7 +32,7 @@
      	   </form>
     	</section>
     	<section class="hotels">
-    	  <b>Тип жилья:</b>
+    	  <h2>Тип жилья:</h2>
     	  <form action="#" method="post">
     	    <input type="checkbox" id="hotel" checked>
     	    <label for="hotel">Гостиница</label><br>
@@ -44,12 +44,15 @@
     	</section>
     	<section class="price">
     		<form action="#" method="post">
-    		Стоимость в сутки (Р):<br>
-    		<table>
-    		  <tr><td>от 0</td><td>до 3000</td></tr>
-    		</table>
+    		<h2>Стоимость в сутки (Р):</h2>
+    		 <div class="filters">
+           <label for="from">от</label>  
+           <input id="from" type="text" value="0">
+           <label for="to">до</label>
+           <input id="to" type="text" value="3000">
+           </div> 
     		  <label for="money">
-    		    <input type="range" id="money" min="0" max="6000" step="1" value="3000"><br>
+    		    <input type="range" id="money" min="0" max="3000" step="1" value="3000"><br>
     		    <input type="submit" value="Показать">
     		  </label>
     		</form>
@@ -57,11 +60,11 @@
     	</div>
     	<div class="results">
     	  <div class="results-top">
-    		<h2>Найдено: 3</h2>
-    		Сортировка:
+    		<h2>Найдено: 3</h2> 
+        <h3>Сортировка:</h3>
     		<nav class="second-navigation">
     		  <ul>
-    		  	<li><a href="#" class="active">По цене</a></li>
+    		  	<a href="#" class="active">По цене</a></li>
     		  	<li><a href="#">По типу</a></li>
     		  	<li><a href="#">По рейтингу</a></li>
     		  </ul>
@@ -70,7 +73,7 @@
     		<div class="results-middle">
     	      <section class="amara">
     	   	    <figure>
-    	   	      <img src="C:/Users/алиса/Desktop/214463-sedona/img/amara.png" alt="amara">
+    	   	      <img src="img/amara.png" alt="amara">
     	   	 	  <label>
     	   	 	    <figcaption>Amara Resorts & spa<br>
     	   	 	 Гостиница	от 3500 Р.</figcaption>
@@ -82,7 +85,7 @@
     	      </section>
     	      <section class="desert">
     	   	    <figure>
-    	   	 	  <img src="C:/Users/алиса/Desktop/214463-sedona/img/desert.png" alt="desert">
+    	   	 	  <img src="img/desert.png" alt="desert">
     	   	 	<label>
     	   	 		<figcaption>Desert quail SPA<br>
     	   	 		Мотель  от 2000 Р.</figcaption>
@@ -96,7 +99,7 @@
     	     </section>
     	      <section class="villas">
     	   	    <figure>
-    	   	 	  <img src="C:/Users/алиса/Desktop/214463-sedona/img/villas.png" alt="villas">
+    	   	 	  <img src="img/villas.png" alt="villas">
     	   	 	<label>
     	   	 	  <figcaption>Villas at diablo<br>
     	   	 	  Апартаменты  от Р.</figcaption>
@@ -118,7 +121,7 @@
   		        </section>
   		        <section class="footer-copyright">
                  Website by
-                 <img src="C:/Users/алиса/Desktop/214463-sedona/img/logo-html.jpg">
+                 <img src="img/logo-html.jpg">
               <a class="btn" href="https://htmlacademy.ru">
                 </section> 
               </div>
