@@ -1,0 +1,67 @@
+body {
+margin: 0;
+	}
+.container {
+
+}	
+
+.main-navigation {
+font-style: serif;
+font-weight: bold;
+font-size: 14px;
+font-weight: 26px;
+font-family: PT Sans;
+height: 100px;
+}
+.main-navigation li{
+display: inline-block; 
+text-align: center;
+width: 20%;
+margin-left: 7px;
+
+}
+.about {
+font-style: serif;
+font-weight: bold;
+font-size: 21px;
+font-weight: 26px;
+font-family: PT Sans;	
+}
+.about p {
+font-style: normal;
+font-weight: lighter;
+font-size: 14px;
+font-weight: 26px;
+font-family: PT Sans;	
+}
+.fact-one {
+font-style: serif;
+font-weight: bold;
+font-size: 14px;
+font-weight: 21px;
+font-family: PT Sans;
+}
+.fact-one h2{
+font-style: serif;
+font-weight: bold;
+font-size: 21px;
+font-weight: 26px;
+font-family: PT Sans;
+}
+.second-navigation li{
+display: inline;
+margin-right: 61px;
+margin-left: 42px;
+
+
+}
+.plus {
+	float: left;
+
+}
+.hotels {
+	float-left: 70px;
+}
+.table {
+	border-top:  : 20px;
+}
