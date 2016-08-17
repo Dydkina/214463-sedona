@@ -106,7 +106,8 @@ body {
 	width: 67%;
 }
 
-.home, .food {
+.home, 
+.food {
 	float:left;
 	width: 33%;
 	padding: 2%;
@@ -126,11 +127,16 @@ body {
 
 }
 
+.fact-two {
+	padding: 2%;
+	margin-right: 28%;
+}
+
 .bridge {
 	float: right;
 	width: 33%;
 	text-align: center;
-	padding: 3%;
+
 }
 
 .fact-three, 
