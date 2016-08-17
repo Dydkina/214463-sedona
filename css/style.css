@@ -1,67 +1,161 @@
 body {
-margin: 0;
-	}
-.container {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 768px;
+	margin: 0 auto;
+	margin-right: 6%;
+	margin-left: 6%;
+	font-size: 14px;
+	font-size: 14px;
+	font-style: serif;
+	font-family: PT Sans;
+}
 
-}	
+* {
+	box-sizing: border-box;
+
+}
 
 .main-navigation {
-font-style: serif;
-font-weight: bold;
-font-size: 14px;
-font-weight: 26px;
-font-family: PT Sans;
-height: 100px;
+	width: 80%;
 }
-.main-navigation li{
-display: inline-block; 
-text-align: center;
-width: 20%;
-margin-left: 7px;
 
+.main-navigation li {
+	display: inline; 
+	width: 20%;
+	margin-left:6.5%;
 }
-.about {
-font-style: serif;
-font-weight: bold;
-font-size: 21px;
-font-weight: 26px;
-font-family: PT Sans;	
-}
-.about p {
-font-style: normal;
-font-weight: lighter;
-font-size: 14px;
-font-weight: 26px;
-font-family: PT Sans;	
-}
-.fact-one {
-font-style: serif;
-font-weight: bold;
-font-size: 14px;
-font-weight: 21px;
-font-family: PT Sans;
-}
-.fact-one h2{
-font-style: serif;
-font-weight: bold;
-font-size: 21px;
-font-weight: 26px;
-font-family: PT Sans;
-}
-.second-navigation li{
-display: inline;
-margin-right: 61px;
-margin-left: 42px;
 
-
-}
-.plus {
-	float: left;
-
-}
+.plus,
 .hotels {
-	float-left: 70px;
+	float: left;
+	width: 15%;
+	padding-top:3%;
+	padding-bottom: 3%;
 }
-.table {
-	border-top:  : 20px;
+
+.price{
+	float-right;
+	width: 85%;
+	padding-top:3%;
+	padding-bottom: 3%;
 }
+
+.clearfix:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.second-navigation li {
+	display: inline;
+	width: 10%;
+	margin-left:5%;
+}
+
+.results-bot {
+	padding-top: 3.3%;
+}
+
+.amara-img,
+.desert-img,
+.villas-img {
+	float: left;
+	width: 20%;
+	padding-top: 3.3%;
+}
+
+.clearfix:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.interest{
+	text-align: center;
+}
+.dates{
+	text-align: center;
+}
+
+.main-footer {
+	text-align: center;
+	width: 100%;
+	padding-top: 5.1%;
+	padding-bottom: 5.1%;
+}
+
+.about {
+	font-style: serif;
+	font-weight: bold;
+	font-size: 21px;
+	font-weight: 26px;
+	font-family: PT Sans;
+	text-align: center;	
+}
+
+.real-town {
+	float: left;
+	width: 33%;
+	padding:3%;
+	text-align: center;
+}
+
+.real-town-img {
+	float: right;
+	width: 67%;
+}
+
+.home, .food {
+	float:left;
+	width: 33%;
+	padding: 2%;
+	text-align: center;
+}
+
+.presents {
+	float: right;
+	width: 33%;
+	padding: 2%;
+	text-align: center;
+}
+
+.bridge-img {
+	float: left;
+	width: 67%;
+
+}
+
+.bridge {
+	float: right;
+	width: 33%;
+	text-align: center;
+	padding: 3%;
+}
+
+.fact-three, 
+.fact-four {
+	float:left;
+	width: 33%;
+	padding: 2%;
+	text-align: center;
+	}
+
+.fact-five {
+	float: right;
+	width: 33%;
+	padding: 2%;
+	text-align: center;
+}
+
+.foot,
+.contacts  {
+	float: left;
+	width: 33%;
+}
+
+.footer-copyright {
+	float: right;
+	width: 33%;
+}
+
