@@ -6,24 +6,98 @@ body {
 	margin-right: 6%;
 	margin-left: 6%;
 	font-size: 14px;
-	font-size: 14px;
 	font-style: serif;
-	font-family: PT Sans;
+	text-transform: uppercase;
+	font-family: 'PT Sans', sans-serif;
+	background: grey url('/img/back.jpg');
 }
 
-* {
-	box-sizing: border-box;
+@font-face {
+  font-weight: normal;
+  font-style: normal;
 
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
+
+* {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .main-navigation {
-	width: 80%;
+	font-weight: bold;
+	width: 100%;
+	height: 79px;
 }
 
 .main-navigation li {
-	display: inline; 
+	display: inline-block; 
 	width: 20%;
-	margin-left:6.5%;
+	text-align: left;
+		list-style: none;
+
+}
+.main-navigation a{
+	list-style: none;
+}
+
+.main-navigation li:nth-child(3) {
+	width: 8%;
+}
+
+.main-navigation li:nth-child(4) {
+	text-align: right;
+}
+
+.main-navigation li:nth-child(5) {
+	text-align: right;
+}
+
+.menu {
+	background: url('/img/hill-catalog.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 217px;
+	color: white;
 }
 
 .plus,
@@ -31,14 +105,21 @@ body {
 	float: left;
 	width: 15%;
 	padding-top:3%;
-	padding-bottom: 3%;
+	margin-right: 12.1%;
+	line-height: 40px;
+}
+
+.plus {
+	padding-left: 6%;
 }
 
 .price{
-	float-right;
-	width: 85%;
+	float:right;
+	width: 29.5%;
+	margin-right: 6%;
 	padding-top:3%;
 	padding-bottom: 3%;
+  padding-right: 6%;
 }
 
 .clearfix:after {
@@ -47,10 +128,27 @@ body {
 	clear: both;
 }
 
+.results-top {
+	display: inline-block;
+	width: 100%;
+	height: 88px;
+	text-align: left;
+	padding-top: 1%;
+}
+
+
+.results-top h2, b {
+	display: inline-block;
+	float: left;
+	width: 15%;
+	text-align: center;
+}
+
 .second-navigation li {
-	display: inline;
-	width: 10%;
-	margin-left:5%;
+	float: left;
+	display: inline-block;
+	width: 10.9%;
+	text-align: center;
 }
 
 .results-bot {
@@ -62,7 +160,7 @@ body {
 .villas-img {
 	float: left;
 	width: 20%;
-	padding-top: 3.3%;
+	margin-top: 3.3%;
 }
 
 .clearfix:after {
@@ -71,11 +169,125 @@ body {
 	clear: both;
 }
 
-.interest{
+.about {
+	text-align: center;	
+	height: 214px;
+	padding-top: 2.2%;
+	padding-bottom: 2.1%;
+}
+
+.about h2 {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 26px;
+	padding-top: 1%;
+}
+
+.fact-one {
+	margin-top: 2.2%;
+}
+
+.real-town {
+	float: left;
+	width: 33%;
+	text-align: center;
+	padding-right: 1%;
+	padding-top: 1.8%;
+	padding-left: 4.8%;
+}
+
+.real-town {
+	height: 256px;
+	background: url('/img/fon-fact-1.png');
+} 
+
+.real-town p{
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.real-town span {
+	line-height: 120px;
+}
+
+
+.real-town-img {
+	float: right;
+	width: 67%;
+}
+
+.advantage-one {
+	padding-top: 2.3%;
+	height: 332px;
+	padding-bottom: 2.5%;
+}
+
+.home, 
+.food {
+	float:left;
+	width: 33%;
 	text-align: center;
 }
-.dates{
+
+.presents {
+	float: right;
+	width: 33%;
 	text-align: center;
+}
+
+.fact-two {
+	margin-top: 2.5%;
+	height: 256px;
+	background: url('/img/fon-fact-1.png');
+}
+
+.bridge-img {
+	float: left;
+	width: 67%;
+}
+
+.bridge {
+	float: right;
+	width: 33%;
+	text-align: center;
+	padding-top: 1.8%;
+}
+
+.bridge p{
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.bridge span {
+	line-height: 150px;
+}
+
+.advantage-two {
+	padding-top: 1.8%;
+	padding-bottom: 1.6%;
+	background: url('/img/facts345.png');
+	height: 256px;
+}
+
+.fact-three, 
+.fact-four {
+	float:left;
+	width: 33%;
+	text-align: center;
+	line-height: 50px;
+	}
+
+.fact-five {
+	float: right;
+	width: 33%;
+	text-align: center;
+	line-height: 50px;
+}
+
+.interest {
+	padding-top: 2.2%;
+	text-align: center;
+	height: 292px;
 }
 
 .main-footer {
@@ -85,73 +297,58 @@ body {
 	padding-bottom: 5.1%;
 }
 
-.about {
-	font-style: serif;
-	font-weight: bold;
-	font-size: 21px;
-	font-weight: 26px;
-	font-family: PT Sans;
-	text-align: center;	
+.map {
+	position: relative;
+	width: 100%;
+
 }
 
-.real-town {
-	float: left;
-	width: 33%;
-	padding:3%;
+.dates {
+	position: absolute;
 	text-align: center;
+	width: 74%;
+	height: 481px;
+	margin-top:-15%;
+	margin-left: 13%;
+	background: url('/img/fon-search.png')  no-repeat;
+	background-size: cover;
 }
 
-.real-town-img {
-	float: right;
-	width: 67%;
+.dates h3 {
+	background: url('/img/braun-line.png');
+	height: 84px;
+	width: 96%;
+	padding-top: 34px;
 }
 
-.home, 
-.food {
-	float:left;
-	width: 33%;
-	padding: 2%;
-	text-align: center;
+.dates form {
+	padding-top: 3.3%;
 }
 
-.presents {
-	float: right;
-	width: 33%;
-	padding: 2%;
-	text-align: center;
+.dates input{
+	margin-left: 2.5%;
+	padding-left: 2.6%;
+	width: 44.8%;
+	height: 1.5%;
 }
 
-.bridge-img {
-	float: left;
-	width: 67%;
-
+#humans {
+	width: 5.2%;
+	height: 1.3%;
+	padding: 0;
+	width: 2.9%;
 }
 
-.fact-two {
-	padding: 2%;
-	margin-right: 28%;
+#child {
+	width: 2.9%;
+	height: 1.3%;
 }
 
-.bridge {
-	float: right;
-	width: 33%;
-	text-align: center;
-
-}
-
-.fact-three, 
-.fact-four {
-	float:left;
-	width: 33%;
-	padding: 2%;
-	text-align: center;
-	}
-
-.fact-five {
-	float: right;
-	width: 33%;
-	padding: 2%;
-	text-align: center;
+.main-footer {
+	position: relative;
+	top: 0px;
+	background: url('/img/footer.png');
+	height: 122px;
 }
 
 .foot,

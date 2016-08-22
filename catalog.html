@@ -3,6 +3,8 @@
     <head>
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -12,10 +14,10 @@
   			    <ul>
   			      <li><a href="index.html">Информация</a></li>
               <li><a href="#">Фото и видео</a></li>
-              <li><a href="index.html"><img src="img/logo.jpg"></a></li>
-              <li><a href="#">Карта штата</a><li>
-              <li><a href="catalog.html" class="active">Гостиницы</a></li>
-  			    </ul>
+              <li><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li class="active"><a>Гостиницы</a></li>
+            </ul>
   		    </nav>
        </header>
     <main>
@@ -44,22 +46,21 @@
        	</div>
     	  <div class="price">
     	  	<form action="#" method="post">
-            <label>
-      		    <h2>Стоимость в сутки (Р):</h2>
-              <label for="from">от</label>  
-              <input id="from" type="text" value="0" class="ot">
-              <label for="to">до</label>
-              <input id="to" type="text" value="3000" class="ot">
-      		    <label for="money"></label>
-      		    <input type="range" id="money" min="0" max="3000" step="1" value="3000"><br>
-      		    <input type="submit" value="Показать">
-    		    </label>
+      		  <h2>Стоимость в сутки (Р):</h2>
+            <label for="from">от</label>  
+            <input id="from" type="text" value="0" class="ot">
+            <label for="to">до</label>
+            <input id="to" type="text" value="3000" class="ot">
+      		  <label for="money"></label>
+      		  <input type="range" id="money" min="0" max="3000" step="1" value="3000"><br>
+      		  <input type="submit" value="Показать">
     		  </form>
     	  </div>
+      </div>
     	  <div class="results">
     	    <div class="results-top">
     		    <h2>Найдено: 3</h2> 
-            <h3>Сортировка:</h3>
+            <b>Сортировка:</b>
     		    <nav class="second-navigation">
     		      <ul>
     		  	   <li><a href="#" class="active">По цене</a></li>
@@ -68,7 +69,7 @@
     		      </ul>
     		    </nav>
     		  </div>
-    	  	<div class="results-bot clearfix">
+    	  	<div class="results-bot">
     	      <div class="amara  clearfix">
     	   	    <div class="amara-img">
                 <img src="img/amara.png" alt="amara">
@@ -118,11 +119,12 @@
   		      </div>
   		      <div class="footer-copyright">
               Website by
-              <img src="img/logo-html.jpg">
+              <img src="img/logo-html.jpg" alt="html">
               <a class="btn" href="https://htmlacademy.ru"></a>
             </div>
           </div>
     	  </footer>
     	</div>
-    </body>
-  </html>    
+    </div>
+  </body>
+</html>    
