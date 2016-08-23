@@ -21,7 +21,7 @@
   		    </nav>
        </header>
     <main>
-      <div class="menu clearfix">
+      <div class="menu" clearfix>
      	  <div class="plus">
      	    <h2>Инфраструктура:</h2>
      	    <form action="#" method="post">
@@ -45,15 +45,22 @@
     	    </form>
        	</div>
     	  <div class="price">
-    	  	<form action="#" method="post">
-      		  <h2>Стоимость в сутки (Р):</h2>
-            <label for="from">от</label>  
-            <input id="from" type="text" value="0" class="ot">
-            <label for="to">до</label>
-            <input id="to" type="text" value="3000" class="ot">
-      		  <label for="money"></label>
-      		  <input type="range" id="money" min="0" max="3000" step="1" value="3000"><br>
-      		  <input type="submit" value="Показать">
+          <div class="price-tittle">
+            <h2>Стоимость в сутки (Р):</h2>
+          </div>
+          <div class="price-control">
+            <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+    	  	  <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-min"></div>
+              <div class="range-max"></div>
+            </div>
+            <button class="show" type="submit">Показать</button>
+            </div>
     		  </form>
     	  </div>
       </div>

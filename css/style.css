@@ -8,7 +8,7 @@ body {
 	font-size: 14px;
 	font-style: serif;
 	text-transform: uppercase;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	background: grey url('/img/back.jpg');
 }
 
@@ -63,21 +63,27 @@ img {
 	height: auto;
 }
 
+.container {
+	position: relative;
+}
+
 .main-navigation {
+	position: absolute;
 	font-weight: bold;
 	width: 100%;
 	height: 79px;
+	background: url('/img/white-fon-head.png');
 }
 
 .main-navigation li {
 	display: inline-block; 
 	width: 20%;
 	text-align: left;
-		list-style: none;
-
 }
+
 .main-navigation a{
-	list-style: none;
+ text-decoration: none;
+ color: black;
 }
 
 .main-navigation li:nth-child(3) {
@@ -96,15 +102,15 @@ img {
 	background: url('/img/hill-catalog.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 217px;
+	min-width: 768px;
+	min-height: 418px;
 	color: white;
 }
 
 .plus,
 .hotels {
 	float: left;
-	width: 15%;
-	padding-top:3%;
+	margin-top:9%;
 	margin-right: 12.1%;
 	line-height: 40px;
 }
@@ -113,13 +119,60 @@ img {
 	padding-left: 6%;
 }
 
-.price{
+.price {
 	float:right;
-	width: 29.5%;
+	width: 240px;
 	margin-right: 6%;
-	padding-top:3%;
-	padding-bottom: 3%;
-  padding-right: 6%;
+	margin-top:9%;
+}
+
+.price-tittle {
+	font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 9px;
+}
+
+.price-control {
+	position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-size: 0;
+}
+
+.price-control::after {
+	content: "";
+	position: absolute;
+	top: 11%;
+	left: 45%;
+	width: 2px;
+	height: 22px;
+	transform: translate(-50%. -50%);
+	background: white;
+}
+
+.price-control label{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.price-control .min-price,
+.price-control .max-price {
+	width: 90px;
+	padding-left: 50px;
+}
+
+.price-control input {
+	width: 44px;
+	margin: 0;
+	font: inherit;
+	border: none;
+	outline: none;
+  opacity: ;
 }
 
 .clearfix:after {
@@ -138,7 +191,7 @@ img {
 
 
 .results-top h2, b {
-	display: inline-block;
+	display: inline;
 	float: left;
 	width: 15%;
 	text-align: center;
