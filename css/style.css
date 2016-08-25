@@ -3,6 +3,7 @@ body {
 	max-width: 1200px;
 	min-width: 768px;
 	margin: 0 auto;
+	background: grey;
 }
 
 @font-face {
@@ -63,8 +64,9 @@ img {
 	font-style: serif;
 	text-transform: uppercase;
 	font-family: 'PT Sans', Arial, sans-serif;
-	background: grey url('/img/back.jpg');
+	background: url('/img/back.jpg');
 	line-height: 21px;
+	width: 100%;
 }
 
 .main-navigation {
@@ -141,10 +143,73 @@ img {
 .plus {
 	padding-left: 6%;
 }
- input[type=checkbox] + label{
+ 
+ input[type=checkbox] {
  	display: none;
  }
 
+ input[type=checkbox] + label span {
+  background-image: url('/icon/sprite.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: -10px -10px;
+}
+
+input[type=checkbox] + label span:hover {
+  background-image: url('/icon/sprite.png');
+  background-repeat: no-repeat;
+  display: inline-block;	
+	width: 22px;
+  height: 22px;
+  background-position: -94px -10px;
+}
+
+input[type=checkbox] + label:checked {
+    background-image: url('/icon/sprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+        width: 26px;
+    height: 22px;
+    background-position: -136px -10px;
+}
+.sprite-checkbox {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -10px;
+
+}
+
+.sprite-checkbox-disable {
+    width: 22px;
+    height: 22px;
+    background-position: -52px -10px;
+}
+
+.sprite-checkbox-hvr {
+    width: 22px;
+    height: 22px;
+    background-position: -94px -10px;
+}
+
+.sprite-checkbox-on {
+    width: 26px;
+    height: 22px;
+    background-position: -136px -10px;
+}
+
+.sprite-checkbox-on-disable {
+    width: 26px;
+    height: 22px;
+    background-position: -182px -10px;
+}
+
+.sprite-checkbox-on-hvr {
+    width: 26px;
+    height: 22px;
+    background-position: -228px -10px;
+}
 .icon-check-on::before { 
 	content: "\2611"; 
 	font-size: 26px;
@@ -286,7 +351,7 @@ img {
 .results-top {
 	display: inline-block;
 	width: 94%;
-	min-height: 90px;
+	min-height: 86px;
 	padding-top: 37px;
 	text-decoration: none;
 }
@@ -346,6 +411,12 @@ img {
 .villas-img {
 	float: left;
 	width: 20%;
+}
+
+.amara,
+.desrt,
+.villas {
+	min-height: 155px;
 }
 
 .amara-description,
