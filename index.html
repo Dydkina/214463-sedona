@@ -12,7 +12,7 @@
 	      <header class="main-head">
 	  	    <nav class="main-navigation">
 	  				<ul>
-	  					<li class="active"><a>Информация</a></li>
+	  					<li ><a class="active">Информация</a></li>
 	  					<li><a href="#">Фото и видео</a></li>
 	  		  		<li class="logo"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="logo"></a></li>
           		<li><a href="#">Карта штата</a></li>
@@ -102,28 +102,33 @@
 		  </div>
 		  <div class="invate">
 		  	<div class="interest">
-		  		<h3>Заинтересовались?</h3>		  	
-		  		<p>Укажите предпологаемые даты поездки,<br>
-		  	и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-		  	</div>
-		  	<div class="map">
-		  		<div class="dates">
-		  			<h3>Поиск гостиницы в Седоне</h3>
+		  		 <h1>Заинтересовались?</h1>	  	
+		  		 <p>Укажите предпологаемые даты поездки,<br>
+		  	   и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+		  	   <div class="btn-s">
+		  	    <h3><input class="in-sedona" type="button" name="hotels" value="Поиск гостиницы в Седоне"></h3>
+		  	  <div class="modal-content clearfix">
 		    		<form action="#" method="post">
-		      	<label for="in">Дата заезда:<input type="date" id="in"></label><br>
-		  	  	<label for="out">Дата выезда:<input type="date" id="out"></label><br>
-		  	 	  <label for="humans"> Взрослые:<button>-</button><input type="number" value="2" step="1" id="humans"><button>+</button><br></label>
-		  	   	<label for="child">Дети:<button>-</button><input type="number" value="0" step="1" id="child"><button>+</button><br></label>
+		      	<label for="in">Дата заезда:</label><input " type="text-date" id="in" value="24 Апреля 2016"><span class="icon-calendar"></span>
+		      	<br>
+		  	  	<label for="out">Дата выезда:</label>
+            <input type="text-date" id="out" value="4 июля 2016"><br>
+		  	 	  <label for="humans"> Взрослые:</label><button>-</button><input type="number" value="2" step="1" id="humans"><button>+</button><br>
+		  	   	<label for="child">Дети:</label><button>-</button><input type="number" value="0" step="1" id="child"><button>+</button><br>
 		       	<input type="submit" value="Найти">
 		     	  </form>
-		  	  </div>
+		     	   </div>
+		  	   </div>
+		  	</div>
+		  </div>	
 		  	  <div class="map">
 		  			<img src="img/map.jpg" alt="map" width="768" height="593">
 		  		</div>
 		  	</div>
 		  </div>
 		  </main>
-		    <footer class="main-footer clearfix" >
+		    <footer class="bot clearfix" >
+		    <div class="main-footer ">
 	    		<div class="foot">
 	  				<h2>#VisitSedona</h2>
 	        </div>
@@ -132,13 +137,30 @@
 	  			  <a class="social-btn" href="#"><span class="icon-facebook" ></span></a>
 	          <a class="social-btn" href="#"><span class="icon-youtube" ></span></a>
 	  		  </div>
-	  		  <div class="footer-copyright">
-	          Website by
-	        	<img src="img/logo-html.jpg" alt="html">
-	          <a class="btn" href="https://htmlacademy.ru"></a>
+          <div class="footer-copyright">
+            Website by
+            <a class="btn" href="https://htmlacademy.ru"><img src="img/logo-html.jpg" alt="html"></a>
+          </div>
 	        </div>
 	      </footer>
 	    </div>
 	  </div>
+	  <script type="text/javascript">
+	  	var link = document.querySelector(".in-sedona");
+	  	var popup = document.querySelector(".modal-content");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+              window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+          }
+        }
+      });
+      
+      });
+	  </script>
 	</body>
 </html>
