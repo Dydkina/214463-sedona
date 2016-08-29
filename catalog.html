@@ -26,7 +26,7 @@
      	    <h2>Инфраструктура:</h2>
      	    <form action="#" method="post">
      	      <input type="checkbox" id="spool" checked>
-     		    <label for="spool"><span class="checkbox"></span>Бассейн</label><br>
+     		    <span class="icon-check-off"></span><label for="spool">Бассейн</label><br>
      		    <input type="checkbox" id="parking">
      		    <label for="parking"><span class="checkbox "></span>Парковка</label><br>
      	      <input type="checkbox" id="wi-fi">
@@ -63,7 +63,7 @@
             </div>
     		  </form>
     	  </div>
-    	  <div class="results clearfix" >
+    	  <div class="results clearfix">
     	    <div class="results-top">
     		    <h2>Найдено: 3</h2> 
     		    <nav class="second-navigation">
@@ -71,7 +71,7 @@
     		      <ul class="sorting">
     		  	   <li><a class="active" href="#">По цене</a></li>
     		  	   <li><a href="#">По типу</a></li>
-    		  	   <li><a href="#">По рейтингу</a></li>
+    		  	   <li><a href="#">По рейтингу</a></li><span class="icon-down-dir active"></span><span class="icon-up-dir"></span>
     		      </ul>
     		    </nav>
     		  </div>
@@ -81,11 +81,11 @@
                 <img src="img/amara.png" width="135" height="90" alt="amara">
               </div>
     	   	 	  <div class="amara-description">
-    	   	 	    <h2>Amara Resorts & spa</h2>
-    	   	 	    <p>Гостиница	от 3500 Р.</p>
+    	   	 	    <h2>Amara Resorts & spa</h2><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+    	   	 	    <p>Гостиница <span class="price-hotels">от 3500 Р.</span> </p>
     	   	      <input type="button" value="Подробнее" class="d">
-    	   	      <input type="button" value="Забронировать">
-    	   	      <span class="rating">Рейтинг:8,5</span>
+    	   	      <input type="button" class="book" value="Забронировать">
+    	   	      <span class="rating">Рейтинг: 8,5</span>
     	        </div>
             </div>
     	      <div class="desert" >
@@ -93,11 +93,11 @@
     	   	 	  <img src="img/desert.png" width="135" height="90" alt="desert">
               </div>
               <div class="desert-description">
-    	   	 		  <h2>Desert quail SPA</h2>
-    	   	 		  <p>Мотель  от 2000 Р.</p>
+    	   	 		  <h2>Desert quail SPA</h2><span class="icon-star"></span><span class="icon-star"></span>
+    	   	 		  <p>Мотель <span class="price-hotels">от 2000 Р.</span></p>
     	   	      <input type="button" value="Подробнее">
-    	   	      <input type="button" value="Забронировать">
-    	   	      <span class="rating">Рейтинг:8,9</span>
+    	   	      <input type="button" class="book" value="Забронировать">
+    	   	      <span class="rating">Рейтинг: 8,9</span>
               </div>
             </div>
     	      <div class="villas">
@@ -105,12 +105,12 @@
     	   	 	  <img src="img/villas.png" width="135" height="90" alt="villas">
               </div>
               <div class="vallas-description">
-    	   	 	    <h2>Villas at diablo</h2>
-    	   	 	    <p>Апартаменты  от 4000 Р.</p>
+    	   	 	    <h2>Villas at diablo</h2><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+    	   	 	    <p>Апартаменты <span class="price-hotels">от 4000 Р.</span></p>
                 <input type="button" value="Подробнее">
-    	   	 	    <input type="button" value="Забронировать">
+    	   	 	    <input type="button"  class="book" value="Забронировать">
     	   	 	    </label>
-    	   	 	    <span class="rating">Рейтинг:9,2</span>
+    	   	 	    <span class="rating">Рейтинг: 9,2</span>
     	        </div>
     	      </div>
     	    </main>
@@ -126,7 +126,9 @@
           </div>
           <div class="footer-copyright">
             Website by
-            <a class="btn" href="https://htmlacademy.ru"><img src="img/logo-html.jpg" alt="html"></a>
+            <div class="academy">
+              <a class="btn" href="https://htmlacademy.ru"></a>
+          </div>
           </div>
           </div>
         </footer>

@@ -109,12 +109,13 @@
 		  	    <h3><input class="in-sedona" type="button" name="hotels" value="Поиск гостиницы в Седоне"></h3>
 		  	  <div class="modal-content clearfix">
 		    		<form action="#" method="post">
-		      	<label for="in">Дата заезда:</label><input " type="text-date" id="in" value="24 Апреля 2016"><span class="icon-calendar"></span>
+		      	<label for="in">Дата заезда:
+		      	<input type="text-date" id="in" value="24 Апреля 2016"><span class="icon-calendar"></span></label>
 		      	<br>
-		  	  	<label for="out">Дата выезда:</label>
-            <input type="text-date" id="out" value="4 июля 2016"><br>
-		  	 	  <label for="humans"> Взрослые:</label><button>-</button><input type="number" value="2" step="1" id="humans"><button>+</button><br>
-		  	   	<label for="child">Дети:</label><button>-</button><input type="number" value="0" step="1" id="child"><button>+</button><br>
+		  	  	<label for="out">Дата выезда:
+            <input type="text-date" id="out" value="4 июля 2016"><span class="icon-calendar"></span></label><br>
+		  	 	  <label for="humans"> Взрослые:<span class="icon-minus"></span><input type="number" value="2" step="1" id="humans"><span class="icon-plus"></span></label>
+		  	   	<label for="child">Дети:<span class="icon-minus"></span>><input type="number" value="0" step="1" id="child"><span class="icon-plus"></span> </label>
 		       	<input type="submit" value="Найти">
 		     	  </form>
 		     	   </div>
@@ -128,10 +129,10 @@
 		  </div>
 		  </main>
 		    <footer class="bot clearfix" >
-		    <div class="main-footer ">
-	    		<div class="foot">
-	  				<h2>#VisitSedona</h2>
-	        </div>
+		      <div class="main-footer ">
+	    		  <div class="foot">
+	  				  <h2>#VisitSedona</h2>
+	          </div>
 	  			<div class="contacts">
 	  				<a class="social-btn" href="#"><span class="icon-twitter"></span></a>
 	  			  <a class="social-btn" href="#"><span class="icon-facebook" ></span></a>
@@ -139,13 +140,14 @@
 	  		  </div>
           <div class="footer-copyright">
             Website by
-            <a class="btn" href="https://htmlacademy.ru"><img src="img/logo-html.jpg" alt="html"></a>
+            <div class="academy">
+              <a class="btn" href="https://htmlacademy.ru"></a>
+            </div>
           </div>
-	        </div>
 	      </footer>
 	    </div>
 	  </div>
-	  <script type="text/javascript">
+	  <script>
 	  	var link = document.querySelector(".in-sedona");
 	  	var popup = document.querySelector(".modal-content");
 

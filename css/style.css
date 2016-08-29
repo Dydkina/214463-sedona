@@ -3,7 +3,7 @@ body {
 	max-width: 1200px;
 	min-width: 768px;
 	margin: 0 auto;
-	background: grey;
+	background: url('../img/grey-back.png');
 }
 
 @font-face {
@@ -65,6 +65,7 @@ img {
 	background-image: url('../img/back.jpg');
 	line-height: 21px;
 	width: 100%;
+	box-shadow: 0 0 12px rgba(0,0,0,0.5);
 }
 
 .main-navigation {
@@ -75,6 +76,7 @@ img {
 	height: 58px;
 	line-height: 26px;
 	background: url('../img/white-fon-head.png');
+	cursor: pointer;
 }
 
 .main-navigation .active {
@@ -86,7 +88,7 @@ img {
 }
 
 .main-navigation .active:active {
-	color: #cccccc;
+	color: #c7c7c7;
 }
 
 .main-navigation a:hover {
@@ -94,7 +96,7 @@ img {
 } 
 
 .main-navigation a:active {
-	color: grey;
+	color: #e4e0dd;
 }
 
 .main-navigation ul {
@@ -137,7 +139,6 @@ img {
 	color: white;
 	padding-left: 73px;
 	padding-right: 73px;
-
 }
 
 .plus,
@@ -163,11 +164,11 @@ img {
 }
 
 .plus {
-	padding-left: %;
+	cursor: pointer;
 }
  
  input[type=checkbox] {
- 	display: none;
+ 	display: no;
  }
 
  input[type=checkbox] + label span {
@@ -325,10 +326,31 @@ input[type=checkbox] + label:checked {
 	background: url('../img/mask.jpg');
 }
 
+.icon-down-dir,
+.icon-up-dir {
+	float: right;
+	font-size: 23px;
+	line-height: 20px;
+	color: #cccccc;
+	cursor: pointer;
+}
+
+span .active {
+	color: #81b3d2;
+}
+
+.icon-up-dir:hover {
+	color: black;
+}
+
+.icon-up-dir:active {
+	color: #81b3d2;
+}
+
 .results-top {
 	display: inline-block;
-	width: 94%;
-	min-height: 86px;
+	width: 100%;
+	min-height: 90px;
 	padding-top: 37px;
 	text-decoration: none;
 }
@@ -348,10 +370,14 @@ input[type=checkbox] + label:checked {
 	min-width: 100px;
 	line-height: 18px;
 	text-align: center;
+	font-size: 12px;
 }
 
 .second-navigation p {
 	font-weight: bold;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
 }
 
 .second-navigation a {
@@ -361,10 +387,6 @@ input[type=checkbox] + label:checked {
 	color: grey;
 }
 
-.vallas-description input{
- padding-top: 1%;
- background: url('../img/book.png');
-}
 .second-navigation .active {
  border: none;
  color: #81b3d2;
@@ -372,6 +394,11 @@ input[type=checkbox] + label:checked {
 
 .second-navigation a:hover {
 	color: #81b3d2;
+}
+
+.second-navigation a:active {
+	color: black;
+	border: none;
 }
 
 .second-navigation p {
@@ -390,10 +417,8 @@ input[type=checkbox] + label:checked {
 	width: 20%;
 }
 
-.amara,
-.desrt,
 .villas {
-	min-height: 155px;
+	height: 270px;
 }
 
 .amara-description,
@@ -401,23 +426,106 @@ input[type=checkbox] + label:checked {
 .vallas-description {
 	float: left;
 	width: 80%;
+} 
+
+.icon-star {
+	float: right;
+	font-size: 17px;
+	color: #81b3d2;
+	padding-left: 4px;
 }
+
 .results-bot h2 {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
+	cursor: pointer;
+	text-decoration: none;
 }
+
+.results-bot h2:hover {
+	color: #81b3d2;
+}
+
+.results-bot h2:active {
+	color: #cacaca;
+}
+
 
 .results-bot p {
 	font-size: 14px;
 	line-height: 21px;
-	padding: 16px; 
+	padding: 16px 0px 20px 0px; 
 }
+
+.desert input,
+.amara input,
+.villas input {
+	width: 110px;
+	height: 27px;
+	border: none;
+	cursor: pointer;
+  background-image: url(../sprite/more.png);
+  background-repeat: no-repeat;
+	background-position: -10px -10px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.price-hotels {
+	padding-left: 37px;
+}
+
+.desert input:hover,
+.amara input:hover,
+.villas input:hover {
+	background-position: -10px -104px;
+}
+
+.desert input:active,
+.amara input:active,
+.villas input:active {
+	background-position: -10px -57px;
+	color: #88b6d1;
+}
+
+.amara .book,
+.desert .book,
+.villas .book  {
+	background: url('../sprite/book.png');
+  background-position: -10px -10px;
+	width: 142px;
+	height: 27px;
+}
+
+.amara .book:hover,
+.desert .book:hover,
+.villas .book:hover {
+	background-position: -10px -104px;
+}
+
+.amara .book:active,
+.desert .book:active,
+.villas .book:active {
+	background-position: -10px -57px;
+	color: #7e7169;
+}
+
 .amara,
 .desert,
 .villas {
-	min-height: 152px;
+	min-height: 151px;
 	width: 100%;	
+}
+
+.rating {
+	float: right;
+	min-height: 27px;
+	min-width: 110px;
+	background: url('../img/raiting.png');
+	text-align: center;
+	padding: 4px 13px 5px 13px;
 }
 
 .clearfix::after {
@@ -477,6 +585,7 @@ h3 {
 	height: 51px;
 	background-size: cover;
 }
+/* first-page (index)*/
 
 .fact-one {
 	min-height: 257px;
@@ -632,7 +741,7 @@ h3 {
 
 @keyframes open {
 	from {
-		transform: translateX(-400px);
+		transform: translateX(-2000px);
 	}
 	
 	70% {
@@ -655,25 +764,63 @@ h3 {
 	font-weight: bold;
 	font-size: 21px;
 	margin-top: 54px;
+	outline: none;
 }
 
 .modal-content input{
-	margin-left: 11px;
-	width: 316px;
-	height: 37px;
-	background: url('../img/line-calendar.png');
+	outline: none;
+	margin-bottom: 30px;
+	width: 309px;
+	height: 38px;
 	border: none;
+	cursor: pointer;
+}
+
+.modal-content input[type=text-date] {
+	margin-left: 21px;
+	padding-left: 15px;
+	background: url('../img/line-calendar.png');
 }
 
 .modal-content input[type=number] {
 	background: url('../img/grey-squared.png');
 	width: 38px;
 	height: 38px;
-	text-align: center;
+	cursor: pointer;
+	text-align: right;
 }
 
+.modal-content .icon-calendar {
+	display: inline-block;
+	line-height: 26px;
+	font-size: 21px;
+	width: 38px;
+	height: 38px;
+	vertical-align: top;
+	padding-right: 8px;
+	padding-top: 5px;
+	cursor: pointer;
+	background: url('../img/line-calendar.png');
+}
+
+.modal-content .icon-plus,
+.modal-content .icon-minus {
+	display: inline-block;
+	font-size: 14px;
+	height: 38px;
+	vertical-align: top;
+	padding-top: 5px;
+	line-height: 26px;
+	background: url('../img/line-calendar.png');
+	cursor: pointer;
+}
+
+.modal-content .icon-minus {
+margin-left: 9px; 
+}
+
+
 .map {
-	
 	width: 100%;
   height: 593px;
   overflow: hidden;
@@ -688,10 +835,12 @@ h3 {
 	width: 100%;
 	max-width: 1200px;
 	min-width: 768px;
+	display: inline-block; 
 }
 
 .main-footer {
 	position: relative;
+	text-transform: uppercase;
 	background: url('../img/footer.png');
 	min-height: 122px;
 	padding-left: 73px;
@@ -700,6 +849,7 @@ h3 {
  }
 
 .foot h2 {
+	padding-bottom: 20px;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
@@ -712,7 +862,6 @@ h3 {
 }
 
 .contacts a {
-	text-decoration: none;
 	color: white;
 }
 
@@ -722,11 +871,29 @@ h3 {
 	line-height: 26px;
 }
 
+.academy {
+	display: inline-block;
+	background-image: url('../sprite/logo.png');
+  width: 113px;
+  height: 39px;
+  background-position: -10px -10px;
+}
+
+.academy:hover {
+	background-position: -10px -128px;
+}
+
+.academy:active {
+	background-position: -10px -69px;
+
+}
+
 .social-btn {
-	background: url('../img/fon-button.png');
+	background: url('../sprite/social-btn.png');
 	display: inline-block;
 	width: 46px;
 	height: 48px;
+	background-position: -10px -10px;
 }
 
 .social-btn span {
@@ -734,43 +901,14 @@ h3 {
 	line-height: 47px;
 }
 
-.icon-facebook::before { 
-	content: "\66";
-} 
-
-.icon-twitter::before { 
-	content: "\74"; 
-}
-
-.icon-youtube::before { 
-	content: "\f39e";
-}
-
-
 .social-btn:hover {
-	background-image: url('../icon/spritesheet.png');
-  background-repeat: no-repeat;
-  position: relative;
   width: 46px;
   height: 48px;
-  background-position: -61px -5px;
-
-}
-.sprite {
-    background-image: url('../icon/spritesheet.png');
-    background-repeat: no-repeat;
-    display: block;
+  background-position: -10px -146px;
 }
 
-.sprite-fon-button {
-    width: 46px;
-    height: 48px;
-    background-position: -5px -5px;
-}
-
-.sprite-s-hover {
-    width: 47px;
-    height: 47px;
-    background-position: -61px -5px;
+.social-btn:active {
+  background-position: -10px -78px;
+  color: #88b6d1;
 }
 
