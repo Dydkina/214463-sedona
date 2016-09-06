@@ -1,7 +1,6 @@
 	  	var btn = document.querySelector(".in-sedona");
 	  	var popup = document.querySelector(".modal-content");
- 			var date = popup.querySelector("[name=date-in]");
- 			
+
       btn.addEventListener("click", function(event) {
   event.preventDefault();
   if (!popup.classList.contains("modal-content-show")){

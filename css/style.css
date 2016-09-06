@@ -101,36 +101,36 @@ img {
 
 .main-navigation ul {
   margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
 }
 
 .main-navigation li {	
-    float: left; 
-    width: 20%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 14px;
-    line-height: 26px;
-    text-align: center;
+  float: left; 
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .main-navigation a {
- text-decoration: none;
- color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .logo {
 	position: absolute;
-	left: 530px;
+	left: 44%;
 	z-index: 1;
 	top: 0px;
  }
 
 .main-navigation li:nth-child(3),
 .main-navigation li:nth-child(4) {
- float: right;
+ 	float: right;
 }
 
 .menu {
@@ -374,104 +374,106 @@ span .active {
 }
 
 .results-top h2 {
-float: left;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 73px;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
+	float: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 73px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 
 .sort-wrapper {
-    float: left;
+  float: left;
 }
 
 .sort-wrapper b {
-    margin-left: 40px;
-    margin-right: 37px;
-    font-size: 12px;
-    line-height: 86px;
-    color: #000000;
+  margin-left: 40px;
+  margin-right: 37px;
+  font-size: 12px;
+  line-height: 86px;
+  color: #000000;
 }
 
 .sort {
-    margin-right: 32px;
-    font-size: 12px;
-    line-height: 18px;
-    text-decoration: none;
-    color: #000000;
-    border-bottom: 1px dotted #81b3d2;
+  margin-right: 32px;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort.active,
 .sort.active:hover {
-    border-bottom: none;
-    color: #81b3d2;
+  border-bottom: none;
+  color: #81b3d2;
 }
+
 .sort-wrapper span {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .sort.active span,
 .sort:hover span,
-.sort:active span
-{
-    opacity: 1; 
+.sort:active span {
+  opacity: 1; 
 }
 
 .sort:hover {
-    color: #81b3d2;
-    border-bottom: 1px dotted #81b3d2;
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
+
 .sort:active {
-    color: #000000;
-    border-bottom: none;
+  color: #000000;
+  border-bottom: none;
 }
 
 .up-down {
-    float: right;
-    margin: 0;
-    margin-top: 30px;
-    margin-right: 73px;
-    padding: 0;
+  float: right;
+  margin: 0;
+  margin-top: 30px;
+  margin-right: 73px;
+  padding: 0;
 }
+
 .arrow {
-    display: inline-block;
-    vertical-align: bottom;
-    height: 23px;
-    
-    font-size: 0;
-    text-decoration: none; 
+  display: inline-block;
+  vertical-align: bottom;
+  height: 23px; 
+  font-size: 0;
+  text-decoration: none; 
 }
+
 .arrow:first-child::before {
-    content: "\25b2";
-    display: inline-block;
-    text-indent: 0px;
-    width: 15px;
-    
-    font-family: "symbols-sedona";
-    font-size: 23px;
-    color: #cccccc;
+  content: "\25b2";
+  display: inline-block;
+  text-indent: 0px;
+  width: 15px;
+  font-family: "symbols-sedona";
+  font-size: 23px;
+  color: #cccccc;
 }
+
 .arrow:last-child::before {
-    content: "\25bc";
-    display: inline-block;
-    text-indent: 0px;
-    width: 15px;
-    
-    font-family: "symbols-sedona";
-    font-size: 23px;
-    color: #cccccc;
+  content: "\25bc";
+  display: inline-block;
+  text-indent: 0px;
+  width: 15px;
+  font-family: "symbols-sedona";
+  font-size: 23px;
+  color: #cccccc;
 }
+
 .arrow:hover::before {
     color: #000000;
 }
+
 .arrow:active::before,
-.arrow.active::before
-{
-    color: #81b3d2;
+.arrow.active::before {
+  color: #81b3d2;
 }
 
 .results-bot {
@@ -484,7 +486,6 @@ float: left;
 	float: left;
 	width: 153px;
 	padding-top: 30px;
-
 }
 
 .white {
@@ -633,10 +634,12 @@ float: left;
 	height: 512px;
 	width: 100%;
 	overflow: hidden;
+	background-color: #86b2d4;
 }
 
 .welcome .bc-photo {
 	transform: translateY(-55px);
+	min-height: 733px;
 }
 
 .sucks {
@@ -650,10 +653,11 @@ float: left;
 	text-align: center;	
 	min-height: 212px;
 	padding-top: 43px;
+	width: 100%;
 }
 
 .about p {
-  padding-top: 19px;
+  padding-top: 17px;
 }
 
 h1 {
@@ -680,7 +684,7 @@ h3 {
 	display: block;
 	position: absolute;
 	background: url('../img/white.png');
-	top: -57px;
+	top: -27%;
 	z-index: 1; 
   width: 100%;
 	height: 57px;
@@ -704,8 +708,8 @@ h3 {
 }
 
 .real-town p {
-	padding-top: 3px;
-	width: 304px;
+	padding-top: 23px;
+	width: 299px;
 }
 
 .real-town h3 {
@@ -715,12 +719,14 @@ h3 {
 .real-town-img {
 	float: right;
 	width: 67%;
+	background-color: #909c88;
 	overflow: hidden;
-	height: 256px;
+  height: 256px;
 }
 
 .real-town-img img {
 	width: 100%;
+	min-height: 255px;
 }
 
 
@@ -730,14 +736,14 @@ h3 {
 } 
 
  .advantage-one h3 {
- 	padding-bottom: 30px;
  	font-weight: bold;
  	font-size: 21px;
- }
+}
 
 .advantage-one p {
-	width: 290px;
+	width: 300px;
 	line-height: 21px;
+	padding-top: 27px;
 }
 
 .advantage-one  img { 
@@ -761,12 +767,14 @@ h3 {
 .bridge-img {
 	float: left;
 	width: 67%;
+	background-color: #d9a28b;
 	overflow: hidden;
 	height: 257px;
 }
 
 .bridge-img img {
 	width: 100%;
+	min-height: 257px;
 }
 
 .bridge {
@@ -781,11 +789,12 @@ h3 {
 }
 
 .bridge h3 {
-	width: 163px;
+	width: 151px;
 }
 
 .bridge p {
 	width: 320px;
+	padding-top: 23px;
 }
 
 .advantage-two {
@@ -796,8 +805,8 @@ h3 {
 }
 
 .advantage-two p {
-	padding-top: 5px;
-	width: 281px;
+	padding-top: 23px;
+	width: 275px;
 }
 
 .advantage-two h3 {
@@ -823,44 +832,42 @@ h3 {
 }
 
 .interest p {
-	padding-top: 17px;
+	padding-top: 10px;
 	line-height: 24px;
 }
 
 .interest h1 {
 	font-size: 30px;
 	line-height: 26px;
-	padding-top: 29px;
+	padding-top: 37px;
 }
 
-.btn-s input[type=button] {
+.btn-s a {
+	text-decoration: none;
 	color: white;
-	background-color: #766357;
-	min-height: 90px;
-	min-width: 568px;
 	border:none;
 	font-size: 21px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-.btn-s {
+.in-sedona {
+	background-color: #766357;
+	height: 87px;
+	width: 568px;
+	line-height: 85px;
+	display: flex;
 	position: relative;
-	padding-top: 40px;
+	margin-top: 44px;
 	text-align: center;
-}
-
-.main-footer {
+	cursor: pointer;
 	text-align: center;
-	width: 100%;
-	padding-top: 5.1%;
-	padding-bottom: 5.1%;
 }
 
 .modal-content {
 	position: absolute;
 	width: 568px;
-	bottom: -397px;
+	bottom: 196px;
 	left: 316px;
 	height: 396px;
 	background-color: #ffffff;
@@ -889,10 +896,6 @@ h3 {
 	}
 }
 
-.modal-content label {
-	display: inline-block;
-}
-
 .modal-content form {
 	width: 458px;
 }
@@ -904,7 +907,7 @@ h3 {
 	color: white;
 	font-weight: bold;
 	font-size: 21px;
-	margin-top: 51px;
+	margin-top: 44px;
 	margin-bottom: 55px;
 }
 
@@ -920,16 +923,20 @@ h3 {
 .modal-content input{
 	outline: none;
 	margin-bottom: 10px;
-	width: 300px;
+	width: 304px;
 	height: 38px;
 	border: none;
 	cursor: pointer;
 }
 
 .modal-content input[type=text] {
-	margin-left: 21px;
-	padding-left: 15px;
+	margin-left: 20px;	
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left:15px;
 	background-color: #f2f2f2;
+	margin-bottom: 29px;
 }
 
 .modal-content input[type=number] {
@@ -944,7 +951,7 @@ h3 {
 	background-color: #ebebeb;
 }
 
-.modal-content input[type=text]:active {
+.modal-content input[type=text]:focus {
 	background-color: #ffffff;
 	border-width: 2px;
 	border-style: solid;
@@ -956,6 +963,7 @@ h3 {
 	line-height: 26px;
 	font-size: 21px;
 	width: 38px;
+
 	height: 38px;
 	color: #c2c2c2;
 	vertical-align: top;
@@ -976,8 +984,9 @@ h3 {
 .modal-content .icon-plus,
 .modal-content .icon-minus {
 	display: inline-block;
+	text-align: center;
 	font-size: 14px;
-	height: 38px;
+	height: 39px;
 	padding-top: 7px;
 	line-height: 26px;
 	background-color: #f2f2f2;
@@ -1006,10 +1015,10 @@ h3 {
 }
 
 .childrens {
-float: right;
+	float: right;
 }
 
-.childrens p{
+.childrens label {
 	margin-right: 20px; 
 }
 
@@ -1030,22 +1039,26 @@ float: right;
 
 .main-footer {
 	position: absolute;
+	text-align: center;
 	text-transform: uppercase;
 	background-color: rgba(254,254,254,0.9);
 	bottom: 0px;
 	width: 100%;
 	height: 121px;
+	padding-top: 36px;
+	vertical-align: middle;
 }
-
 
 .hashtag {
 	float: left;
 	width: 400px;
+	margin-top: 10px;
 }
  
 .hashtag span {
 	font-weight: bold;
 	font-size: 21px;
+	line-height: 26px;
 }
 
 .contacts  {
@@ -1063,6 +1076,8 @@ float: right;
 .footer-copyright {
 	float: right;
 	width: 400px;
+	margin-top: 10px;
+	line-height: 26px;
 }
 
 .academy {
@@ -1105,4 +1120,3 @@ float: right;
   background-color: #5496bd;
   color: #88b6d1;
 }
-
