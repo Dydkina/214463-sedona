@@ -121,9 +121,9 @@ img {
 	color: black;
 }
 
-.logo {
+.main-navigation img {
 	position: absolute;
-	left: 44%;
+	left: 44.3%;
 	z-index: 1;
 	top: 0px;
  }
@@ -136,19 +136,20 @@ img {
 .menu {
 	background: url('../img/hill-catalog.jpg');
 	background-size: 100%;
+	background-color: #2a3c46;
 	background-repeat: no-repeat;
 	width: 100%;
 	min-height: 217px;
 	color: white;
-	padding-left: 73px;
-	padding-right: 73px;
+	padding-left: 6%;
+	padding-right: 6%;
 }
 
 .plus,
 .hotels {
 	float: left;
-	margin-top:30px;
-	margin-right: 70px;
+	margin-top: 30px;
+	margin-right: 78px;
 	font-size: 14px;
 	width: 178px;
 }
@@ -220,23 +221,21 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .price {
 	float:right;
-	width: 320px;
+	width: 30%;
 	margin-top: 26px;
-	margin-left: 67px;
 }
 
 .price-tittle {
 	font-weight: 600;
 	line-height: 21px;
 	font-size: 16px;
-  line-height: 21px;
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 }
 
 .price-control {
 	position: relative;
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   border: 2px solid white;
   border-radius: 2px;
   font-size: 0;
@@ -246,8 +245,8 @@ input[type="checkbox"]:checked + label:hover::before {
 	content: "";
 	position: absolute;
 	top: 15%;
-	left: 45%;
-	width: 2px;
+	left: 50%;
+	width: 0.5%;
 	height: 22px;
 	background: white;
 	transform: translate(-50%. -50%);
@@ -263,12 +262,16 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .price-control .min-price,
 .price-control .max-price {
-	width: 140px;
-	padding-left: 68px;
+	width: 50%;
+	padding-left: 21%;
+}
+
+.price-control .max-price {
+	padding-left: 17%;
 }
 
 .price-control input {
-	width: 34px;
+	width: 50%;
 	padding-left: 3px;
 	font: inherit;
 	color: inherit;
@@ -278,9 +281,9 @@ input[type="checkbox"]:checked + label:hover::before {
 }
 
 
-.range {
+.range-controls {
 	position: relative;
-	margin-bottom: 32px;
+	margin-bottom: 33px;
 }
 
 .scale {
@@ -297,12 +300,12 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .range-toggle {
 	position: absolute;
-	top: -9px;
+	top: -7px;
 	width: 4px;
 	height: 4px;
 	background: #ababab;
-	border: 8px solid #ffffff;
-  border-radius: 50%;
+	border: 10px solid #ffffff;
+  border-radius: 20px;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
@@ -322,7 +325,7 @@ input[type="checkbox"]:checked + label:hover::before {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 33px;
 
   font-size: 14px;
   line-height: 20px;
@@ -333,6 +336,7 @@ input[type="checkbox"]:checked + label:hover::before {
   border: 2px solid #ffffff;
   border-radius: 2px;
   outline: none;
+  margin-right: 96px;
   cursor: pointer;
 }
 
@@ -368,9 +372,9 @@ span .active {
 
 .results-top {
 	width: 100%;
-	min-height: 87px;
+	min-height: 88px;
 	text-decoration: none;
-    border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .results-top h2 {
@@ -386,11 +390,12 @@ span .active {
 
 .sort-wrapper {
   float: left;
+	padding-top: 2px;
 }
 
 .sort-wrapper b {
-  margin-left: 40px;
-  margin-right: 37px;
+  margin-left: 47px;
+  margin-right: 34px;
   font-size: 12px;
   line-height: 86px;
   color: #000000;
@@ -434,9 +439,8 @@ span .active {
 .up-down {
   float: right;
   margin: 0;
-  margin-top: 30px;
-  margin-right: 73px;
-  padding: 0;
+  margin-top: 31px;
+  margin-right: 6%;
 }
 
 .arrow {
@@ -477,15 +481,16 @@ span .active {
 }
 
 .results-bot {
-	margin-left: 73px;
+	margin-left: 6%;
 }
 
 .amara-img,
 .desert-img,
 .villas-img {
 	float: left;
-	width: 153px;
+	width: 14%;
 	padding-top: 30px;
+	max-height: 90px;
 }
 
 .white {
@@ -496,7 +501,8 @@ span .active {
 .desert-description,
 .vallas-description {
 	float: left;
-	width: 901px;
+	min-width: 80%;
+	margin-right: 6%;
 	text-decoration: none;
 	padding-top: 25px;
 } 
@@ -513,7 +519,7 @@ span .active {
 	float: right;
 	font-size: 17px;
 	color: #81b3d2;
-	padding-left: 4px;
+	padding-right: 2px;
 }
 
 .results-bot h2 {
@@ -522,12 +528,12 @@ span .active {
 	line-height: 26px;
 	cursor: pointer;
 	margin-left: 10px;
-	width: 220px;
+	width: 250px;
 }
 
 .results-bot span {
-	width: 24px;
-	padding-top: 5px;
+	width: 23px;
+	padding-top: 2px;
 }
 
 .results-bot h2:hover {
@@ -541,7 +547,7 @@ span .active {
 .item-1 {
 	float: left;
 	width: 110px;
-	margin-left: 12px;
+	margin-left: 8px;
 }
 
 .item-2 {
@@ -553,45 +559,53 @@ span .active {
 .results-bot p {
 	font-size: 14px;
 	line-height: 21px;
-	padding: 4px 0px 20px 0px; 
+	padding: 5px 0px 20px 0px; 
 }
 
-.item-1 input[type="button"] {
+.item-1 a {
+	display: block;
+	text-align: center;
 	width: 110px;
-	height: 29px;
+	height: 27px;
 	border: none;
 	cursor: pointer;
 	font-weight: bold;
 	text-transform: uppercase;
 	background-color: #81b3d2;
 	color: white;
+	line-height: 21px;
+	padding-top: 2px;
 }
 
-.item-1 input[type="button"]:hover {
+.item-1 a:hover {
 	background-color: #669ec0;
 }
 
-.item-1 input[type="button"]:active {
+.item-1 a:active {
 	background-color: #5496bd;
 	color: #88b6d1;
 }
 
-.item-2 input[type="button"] {
-	width: 143px;
-	height: 29px;
+.item-2 a{
+	display: block;
+	width: 142px;
+	text-align: center;
+	height: 27px;
 	border: none;
 	cursor: pointer;
 	font-weight: bold;
 	text-transform: uppercase;
 	background-color: #766357;
 	color: white;
+	line-height: 21px;
+	padding-top: 2px;
 }
 
-.item-2 input[type="button"]:hover {
+.item-2 ahover {
 	background-color: #604e43;
 }
 
-.item-2 input[type="button"]:active {
+.item-2 a:active {
 	background-color: #503e33;
 	color: #7e7169;
 }
@@ -599,23 +613,20 @@ span .active {
 .amara,
 .desert,
 .villas {
-	min-height: 150px;
+	height: 151px;
 	width: 100%;	
 	border-bottom: 1px solid #e5e5e5;
 }
 
 .rating {
 	float: right;
-	margin-left: 1000px;
 	min-height: 27px;
 	width: 112px;
 	text-align: right;
 	color: #666666;
 	background-color: #f2f2f2;
-	margin-top: 44px;
-	padding: 6px 13px 5px 13px;
-	margin-left: 0px;
-
+	margin-top: 38px;
+	padding: 6px 15px 5px 13px;
 }
 
 .clearfix::after {
@@ -1051,7 +1062,7 @@ h3 {
 
 .hashtag {
 	float: left;
-	width: 400px;
+	width: 34%;
 	margin-top: 10px;
 }
  
@@ -1063,7 +1074,7 @@ h3 {
 
 .contacts  {
 	float: left;
-	width: 400px;
+	width: 32%;
 }
 
 .contacts a {
@@ -1075,9 +1086,10 @@ h3 {
 
 .footer-copyright {
 	float: right;
-	width: 400px;
-	margin-top: 10px;
+	width: 33%;
+	margin-top: 5px;
 	line-height: 26px;
+	text-align: center;
 }
 
 .academy {
@@ -1085,8 +1097,9 @@ h3 {
 	background-image: url('../img/spritesheet.png');
   width: 113px;
   height: 39px;
-  vertical-align: top;
+  vertical-align: middle;
   background-position: -10px -262px;
+  cursor: pointer;
 }
 
 .academy:hover {
