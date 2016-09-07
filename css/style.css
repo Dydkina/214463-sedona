@@ -131,7 +131,7 @@ img {
 .main-navigation li:nth-child(3),
 .main-navigation li:nth-child(4) {
  	float: right;
-}
+ }
 
 .menu {
 	background: url('../img/hill-catalog.jpg');
@@ -148,10 +148,10 @@ img {
 .plus,
 .hotels {
 	float: left;
-	margin-top: 30px;
-	margin-right: 78px;
+	margin-top: 29px;
+	margin-right: 77px;
 	font-size: 14px;
-	width: 178px;
+	width: 17%;
 }
 
 .plus h2 {
@@ -180,7 +180,7 @@ img {
 
 .menu ul {
   margin-left: 0px; 
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 0px; 
 }
 
@@ -221,8 +221,8 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .price {
 	float:right;
-	width: 30%;
-	margin-top: 26px;
+	margin-top: 27px;
+	width
 }
 
 .price-tittle {
@@ -236,6 +236,7 @@ input[type="checkbox"]:checked + label:hover::before {
 	position: relative;
   height: 36px;
   margin-bottom: 22px;
+  width: 320px;
   border: 2px solid white;
   border-radius: 2px;
   font-size: 0;
@@ -267,7 +268,7 @@ input[type="checkbox"]:checked + label:hover::before {
 }
 
 .price-control .max-price {
-	padding-left: 17%;
+	padding-left: 18%;
 }
 
 .price-control input {
@@ -283,7 +284,7 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .range-controls {
 	position: relative;
-	margin-bottom: 33px;
+	margin-bottom: 32px;
 }
 
 .scale {
@@ -325,7 +326,8 @@ input[type="checkbox"]:checked + label:hover::before {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 33px;
+  padding: 5px 33px;
+  width: 42% ;
 
   font-size: 14px;
   line-height: 20px;
@@ -439,7 +441,7 @@ span .active {
 .up-down {
   float: right;
   margin: 0;
-  margin-top: 31px;
+  margin-top: 33px;
   margin-right: 6%;
 }
 
@@ -494,7 +496,7 @@ span .active {
 }
 
 .white {
-	height: 122px;
+	min-height: 122px;
 }
 
 .amara-description,
@@ -505,6 +507,7 @@ span .active {
 	margin-right: 6%;
 	text-decoration: none;
 	padding-top: 25px;
+	min-height: 151px;
 } 
 
 .amara-description  a,
@@ -519,7 +522,7 @@ span .active {
 	float: right;
 	font-size: 17px;
 	color: #81b3d2;
-	padding-right: 2px;
+	margin-right: 1px;
 }
 
 .results-bot h2 {
@@ -528,7 +531,6 @@ span .active {
 	line-height: 26px;
 	cursor: pointer;
 	margin-left: 10px;
-	width: 250px;
 }
 
 .results-bot span {
@@ -546,20 +548,20 @@ span .active {
 
 .item-1 {
 	float: left;
-	width: 110px;
+	min-width: 110px;
 	margin-left: 8px;
 }
 
 .item-2 {
 	float: left;
-  width: 143px;
+  min-width: 143px;
   margin-left: 7px;
 }
 
 .results-bot p {
 	font-size: 14px;
 	line-height: 21px;
-	padding: 5px 0px 20px 0px; 
+	padding: 7px 0px 13px 0px; 
 }
 
 .item-1 a {
@@ -574,7 +576,7 @@ span .active {
 	background-color: #81b3d2;
 	color: white;
 	line-height: 21px;
-	padding-top: 2px;
+	padding-top: 3px;
 }
 
 .item-1 a:hover {
@@ -586,7 +588,7 @@ span .active {
 	color: #88b6d1;
 }
 
-.item-2 a{
+.item-2 a {
 	display: block;
 	width: 142px;
 	text-align: center;
@@ -598,10 +600,10 @@ span .active {
 	background-color: #766357;
 	color: white;
 	line-height: 21px;
-	padding-top: 2px;
+	padding-top: 4px;
 }
 
-.item-2 ahover {
+.item-2 a:hover {
 	background-color: #604e43;
 }
 
@@ -613,20 +615,21 @@ span .active {
 .amara,
 .desert,
 .villas {
-	height: 151px;
+	min-height: 151px;
 	width: 100%;	
 	border-bottom: 1px solid #e5e5e5;
 }
 
 .rating {
 	float: right;
-	min-height: 27px;
-	width: 112px;
-	text-align: right;
+	height: 27px;
+	min-width: 110px;
+	text-align: center;
 	color: #666666;
 	background-color: #f2f2f2;
-	margin-top: 38px;
-	padding: 6px 15px 5px 13px;
+	margin-top: 42px;
+	padding: 2px 11px 10px 17px;
+	margin-right: 5px;
 }
 
 .clearfix::after {
@@ -1062,7 +1065,7 @@ h3 {
 
 .hashtag {
 	float: left;
-	width: 34%;
+	width: 33%;
 	margin-top: 10px;
 }
  
@@ -1074,7 +1077,7 @@ h3 {
 
 .contacts  {
 	float: left;
-	width: 32%;
+	width: 34%;
 }
 
 .contacts a {
