@@ -942,7 +942,7 @@ h3 {
 }
 
 .in-sedona {
-	  display: block;
+	display: block;
     background-color: #766357;
     height: 87px;
     width: 568px;
@@ -956,9 +956,9 @@ h3 {
 
 .modal-content {
     position: absolute;
-    width: 568px;
-    bottom: 196px;
-    left: 316px;
+    min-width: 568px;
+    bottom: 7.2%;
+    left: 26.4%;
     height: 396px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
